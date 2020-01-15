@@ -1,0 +1,27 @@
+<p>hello works!</p>
+
+
+<div>
+    <label>id:
+      <input [(ngModel)]="hero.id" placeholder="name"class="form-control" type="number"/>
+    </label>
+  </div>
+<div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"class="form-control" />
+    </label>
+  </div>
+<ul class="heroes">
+  <li *ngFor="let item of heroes;let i = index" (click)="onSelect(item,i)"
+  [ngClass]="{'this-is-a-class': heroselect!==undefined && item.id === heroselect.id }"
+
+  >
+    <span class="badge">{{item.id}}</span> {{item.name}}
+  </li>
+</ul>
+<input [ngAutonumeric]="optionNumber" 
+ngAutonumeric 
+[(ngModel)]="myModel" 
+ />
+{{myModel}}
+<app-hero-detail [hero]="heroselect"></app-hero-detail>
