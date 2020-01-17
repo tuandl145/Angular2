@@ -34,7 +34,7 @@ export class HelloComponent implements OnInit {
   loadMullTiple(){
     return false;
   }
-  TimKiem(){
-    return 134;
+  dropdown(){
+    return false;
   }
 }
