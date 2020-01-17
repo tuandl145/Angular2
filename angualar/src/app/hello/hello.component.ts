@@ -34,5 +34,7 @@ export class HelloComponent implements OnInit {
     this.heroselect=item;
     alert(item.id+" - "+ item.name+" - "+ i);
   }
-  
+  TimKiem(){
+    return 134;
+  }
 }
