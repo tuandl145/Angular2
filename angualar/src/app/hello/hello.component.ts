@@ -37,4 +37,7 @@ export class HelloComponent implements OnInit {
   TimKiem(){
     return 134;
   }
+  tinhtien2234(){
+    return"";
+  }
 }
