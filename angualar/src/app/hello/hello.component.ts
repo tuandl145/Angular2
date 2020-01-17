@@ -30,9 +30,9 @@ export class HelloComponent implements OnInit {
      this.heroes= this.helloService.callResponse(heroes)
     )
   }
-  onSelect(item,i){
-    this.heroselect=item;
-    alert(item.id+" - "+ item.name+" - "+ i);
+  
+  loadMullTiple(){
+    return false;
   }
   
 }
